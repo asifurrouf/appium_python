@@ -25,10 +25,10 @@ download and unarchive the source tarball (Appium-Python-Client-X.X.tar.gz).
     python setup.py install
     ```
 
-3. Install from source via [GitHub](https://github.com/appium/python-client).
+3. Install from source via [GitHub](https://github.com//python-client).
 
     ```shell
-    git clone git@github.com:appium/python-client.git
+    git clone git@github.com:asifurrouf/appium_python_client.git
     cd python-client
     python setup.py install
     ```

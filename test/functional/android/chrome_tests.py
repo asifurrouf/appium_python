@@ -24,8 +24,8 @@ class ChromeTests(unittest.TestCase):
     def setUp(self):
         desired_caps = {
             'platformName': 'Android',
-            'platformVersion': '4.2',
-            'deviceName': 'Android Emulator',
+            'platformVersion': '4.4.2',
+            'deviceName': 'Xplorer ZV',
             'browserName': 'Chrome'
         }
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)

@@ -24,7 +24,7 @@ def get_desired_capabilities(app):
     desired_caps = {
         'platformName': 'Android',
         'platformVersion': '4.4.2',
-        'deviceName': 'Android Emulator',
+        'deviceName': 'Xplorer ZV',
         'app': PATH('../../apps/' + app),
         'newCommandTimeout': 240
     }

@@ -24,8 +24,8 @@ class ChromeTests(unittest.TestCase):
     def setUp(self):
         desired_caps = {
             'platformName': 'Android',
-            'platformVersion': '4.2',
-            'deviceName': 'Android Emulator',
+            'platformVersion': '4.4.2',
+            'deviceName': 'Xplorer ZV',
             'browserName': 'Chrome'
         }
         self.driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
@@ -34,10 +34,11 @@ class ChromeTests(unittest.TestCase):
         self.driver.quit()
 
     def test_find_single_element(self):
-        self.driver.get('http://10.0.2.2:4723/test/guinea-pig')
-        self.driver.find_element_by_link_text('i am a link').click()
+        self.driver.get('https://www.wikipedia.org/')
+        self.driver.find_element_by_id('searchInput').click()
+        self.driver.find_element_by_id('searchInput').send_keys("Bangladesh")
+        self.driver.find_element_by_css_selector('#search-form > fieldset > button > i').click()
 
-        self.assertTrue('I am some other page content' in self.driver.page_source)
 
 
 if __name__ == "__main__":

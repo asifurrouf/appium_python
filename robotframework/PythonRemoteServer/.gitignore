@@ -1,0 +1,8 @@
+MANIFEST
+.idea
+*.pyc
+build
+test/results
+example/log.html
+example/report.html
+example/output.xml
